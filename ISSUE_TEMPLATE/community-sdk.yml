@@ -1,0 +1,82 @@
+name: Community SDK Submission
+description: Submit a BranchKit plugin SDK for review and listing.
+title: "SDK: [Language] by [Author]"
+labels: ["community-sdk"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for building a BranchKit SDK! Fill out the details below and we'll review it for listing on the docs site.
+
+        You retain full ownership of your SDK and its repository. Approval means we've verified conformance and will list it with your name.
+
+  - type: input
+    id: language
+    attributes:
+      label: Language
+      description: The SDK's target language.
+      placeholder: "e.g., Python, Rust, C#, Ruby"
+    validations:
+      required: true
+
+  - type: input
+    id: author
+    attributes:
+      label: Author
+      description: Your name or organization.
+      placeholder: "e.g., Jane Smith, Acme Labs"
+    validations:
+      required: true
+
+  - type: input
+    id: sdk-repo
+    attributes:
+      label: SDK Repository
+      description: GitHub URL to the SDK source.
+      placeholder: "https://github.com/you/branchkit-sdk-python"
+    validations:
+      required: true
+
+  - type: input
+    id: template-repo
+    attributes:
+      label: Plugin Template Repository
+      description: GitHub URL to the companion starter project.
+      placeholder: "https://github.com/you/branchkit-plugin-template-python"
+    validations:
+      required: true
+
+  - type: input
+    id: package
+    attributes:
+      label: Package Registry
+      description: Link to the published package (npm, PyPI, crates.io, etc.).
+      placeholder: "https://pypi.org/project/branchkit-sdk/"
+    validations:
+      required: true
+
+  - type: input
+    id: license
+    attributes:
+      label: License
+      description: The license your SDK uses.
+      placeholder: "MIT"
+    validations:
+      required: true
+
+  - type: textarea
+    id: conformance
+    attributes:
+      label: Conformance Test Results
+      description: Paste the output from running the conformance test harness against your test plugin.
+      render: shell
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: Anything else you'd like us to know (design decisions, limitations, etc.).
+    validations:
+      required: false
