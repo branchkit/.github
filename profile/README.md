@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  A runtime for plugins that control a computer.
+  An accessibility plugin platform for the desktop.
 </p>
 
 <p align="center">
@@ -23,6 +23,10 @@ The platform itself does nothing a user would notice. It loads plugins,
 confines them, tracks what is true right now — which application has focus,
 which mode is active, what the user is looking at — and routes commands to
 whichever plugin claims them.
+
+Plugins are the point. No vendor can enumerate the ways a person might need to
+reach a computer, so the ways in are extensible by the people who need them
+rather than fixed by whoever shipped the app.
 
 All behavior lives in plugins: dictation and voice commands, window management,
 keyboard remapping, browser control, system state. A plugin is a process
