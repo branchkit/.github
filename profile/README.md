@@ -57,8 +57,10 @@ bundled plugins' doing — the runtime contributes none of it.
   is eligible in the current context rather than against everything at once.
 - **Window control** — snapping, moving between spaces and displays, mission
   control.
-- **Browser control** — hint badges on any page, so links, buttons and fields
-  can be named aloud instead of clicked.
+- **Browser control** — a companion extension labels every link, button and
+  field on the page, so you can name one aloud to click it, type into it, or
+  send its tab to another window or desktop. It reaches the app through the
+  browser's native-messaging channel; no page content leaves the machine.
 - **Keyboard** — a global hotkey registry and remapping, so any command can be
   reached by a key instead of a word.
 - **System** — launching and switching applications, audio devices and volume,
