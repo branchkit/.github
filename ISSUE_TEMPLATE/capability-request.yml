@@ -1,0 +1,54 @@
+name: Capability request
+description: Something you tried to build and couldn't. Tell us what your plugin needed from the platform.
+title: "Capability: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        You don't need to know how BranchKit is built to file this. Describe what you want your plugin to do and where it stopped; we'll work out what the platform needs to offer.
+
+        Found a security problem instead? Please report it privately from this repository's **Security** tab, not here.
+
+  - type: textarea
+    id: building
+    attributes:
+      label: What are you building?
+      description: The plugin, and who it's for.
+      placeholder: "A plugin that lets someone who can't use a mouse …"
+    validations:
+      required: true
+
+  - type: textarea
+    id: stopped
+    attributes:
+      label: What did you try, and where did it stop?
+      description: The call you looked for, the event you expected, the error you got.
+    validations:
+      required: true
+
+  - type: textarea
+    id: need
+    attributes:
+      label: What would you need from the platform?
+      description: Optional. "A method that …", "an event when …", "permission to …". A guess is fine.
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Which operating systems?
+      multiple: true
+      options:
+        - macOS
+        - Linux
+        - Windows
+
+  - type: dropdown
+    id: sdk
+    attributes:
+      label: Which SDK?
+      options:
+        - Go
+        - TypeScript
+        - Python
+        - Other, or none yet
