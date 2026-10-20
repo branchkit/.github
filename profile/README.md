@@ -117,8 +117,14 @@ in Rust against [stage-sdk](https://github.com/branchkit/stage-sdk).
 | [branchkit-gen](https://github.com/branchkit/branchkit-gen) | Typed action parameters generated from a manifest |
 | [registry](https://github.com/branchkit/registry) | The public plugin registry |
 
-The app itself, the platform, the voice and tiling plugins and the browser
-extension are closed source.
+**Closed source.** Not public, listed here so the page shows all of
+BranchKit:
+
+| | |
+|---|---|
+| Voice | The plugin behind dictation and spoken commands. Speech recognition runs on the machine: commands are matched live while you hold a key, and dictation is transcribed when you release it, then typed at the cursor |
+| Browser extension | The Chrome and Firefox half of browser control: it draws the code words on the page and acts on them |
+| The app | The platform runtime, Settings, and the macOS app around them |
 
 ## Status
 
