@@ -61,12 +61,13 @@ bundled plugins' doing — the runtime contributes none of it.
   field on the page, so you can name one aloud to click it, type into it, or
   send its tab to another window or desktop. It reaches the app through the
   browser's native-messaging channel; no page content leaves the machine.
-- **Keyboard** — a global hotkey registry and remapping, so any command can be
-  reached by a key instead of a word.
+- **Keyboard and mouse** — presses keys, clicks and scrolls for you, and names
+  every key, so anything a keyboard or mouse does can be reached another way.
 - **System** — launching and switching applications, audio devices and volume,
   system settings.
-- **Scripting** — user Lua scripts, for automating something without writing
-  and installing a plugin.
+- **Scripting** — single-file scripts in Lua, JavaScript, TypeScript or Python
+  for commands, event handlers and timers, without writing and installing a
+  plugin.
 - **Spoken feedback** — errors, the mode you are in, and the choices it offers,
   reported aloud rather than only on screen.
 
